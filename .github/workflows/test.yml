@@ -1,0 +1,14 @@
+name: Render
+on:
+  workflow_call:
+
+jobs:
+  render:
+    name: Test
+    runs-on: ubuntu
+
+    steps:
+      - name: Test
+        run: |
+          echo ${{ secrets.SECRET1 }}
+          echo ${{ secrets.SECRET2 }}
